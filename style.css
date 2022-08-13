@@ -14,6 +14,10 @@ html, body {
     flex-direction: column;
     justify-content: space-between;
     background-color: hsl(185, 75%, 39%);
+    background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: -200px -500px, 200% 0;
+    background-size: 900px, 1000px;
 }
 
 .content {
@@ -24,16 +28,97 @@ html, body {
 }
 
 .profile {
+    box-sizing: border-box;
+    padding-top: 86px;
+    padding-bottom: 27px;
     width: 350px;
     height: 374px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     background-color: hsl(0, 100%, 100%);
+    border-radius: 10px;
+    background-image: url("images/bg-pattern-card.svg");
+    background-repeat: no-repeat;
+}
+
+.profile_avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 4px solid hsl(0, 100%, 100%);
+}
+
+.profile_info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.profile_name-wrapper {
+    display: flex;
+    column-gap: 10px;
+}
+
+.profile_name {
+    font-weight: 700;
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+}
+
+.profile_age {
+    font-weight: 400;
+    font-size: 18px;
+    color: hsl(227, 10%, 46%);
+}
+
+.profile_city {
+    font-weight: 400;
+    font-size: 14px;
+    color: hsl(227, 10%, 46%);
+}
+
+.profile_sep {
+    width: 100%;
+    height: 1px;
+    background-color: hsl(0, 0%, 91%);
+    border: none;
+}
+
+.profile_stat {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile_stat_col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.profile_stat_numb {
+    font-weight: 700;
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+}
+
+.profile_stat_name {
+    font-weight: 400;
+    font-size: 10px;
+    color: hsl(227, 10%, 46%);
 }
 
 .attribution {
+    font-weight: 700;
     font-size: 11px;
     text-align: center;
+    color: hsl(213, 100%, 8%);
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(237, 100%, 29%);
 }
